@@ -22,4 +22,6 @@ int main()
     printf("\n");
     printf("%d", 5 / 5);
     printf("\n");
+
+    return 0;
 }
