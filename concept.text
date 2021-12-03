@@ -1,0 +1,14 @@
+\n for new line
+
+int range = (-2^31) - (2^31 - 1)
+2^31 = 2*10^9
+long long range = (-2^63) - (2^63 - 1)
+speed of int > speed of long long
+
+float range < double range = (float)
+%f for float data type
+%lf for double data type
+
+acos(something)... here acos means the value of cos inverse (something)
+the return value of acos(something) is in radians.
+
