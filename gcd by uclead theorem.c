@@ -9,7 +9,27 @@ int main()
     n1 = a > b ? a : b;
     n2 = a < b ? a : b;
 
-    /*
+    if (n1 == 0)
+        gcd = n2;
+    else if (n2 == 0)
+    {
+        gcd = n1;
+    }
+
+    else
+    {
+        while (n2 != 0)
+        {
+            x = n2;
+            n2 = n1 % n2;
+            n1 = x;
+        }
+        gcd = n1;
+    }
+    printf("GCD Is %d\n", gcd);
+}
+
+/*
     The Euclidean Algorithm
 
     If A = 0 then GCD(A,B)=B, since the GCD(0,B)=B, and we can stop.
@@ -51,23 +71,3 @@ int main()
     GCD(270,192) = GCD(192,78) = GCD(78,36) = GCD(36,6) = GCD(6,0) = 6
     GCD(270,192) = 6
 */
-
-    if (n1 == 0)
-        gcd = n2;
-    else if (n2 == 0)
-    {
-        gcd = n1;
-    }
-
-    else
-    {
-        while (n2 != 0)
-        {
-            x = n2;
-            n2 = n1 % n2;
-            n1 = x;
-        }
-        gcd = n1;
-    }
-    printf("GCD Is %d\n", gcd);
-}
