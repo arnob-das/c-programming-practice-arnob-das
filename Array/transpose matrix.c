@@ -1,5 +1,6 @@
-#include<stdio.h>
-int main(){
+#include <stdio.h>
+int main()
+{
     int m = 3, n = 3, i, j;
 
     int myArray[m][n];
@@ -14,30 +15,33 @@ int main(){
         }
     }
     // print real matrix
-    for(i = 0; i < m; i++){
-        for(j = 0; j < n; j++){
+    for (i = 0; i < m; i++)
+    {
+        for (j = 0; j < n; j++)
+        {
             printf("%d \t", myArray[i][j]);
         }
         printf("\n");
     }
 
     // transpos matrix
-    for(i=0; i < m; i++){
-        for(j=0; j < n; j++){
+    for (i = 0; i < m; i++)
+    {
+        for (j = 0; j < n; j++)
+        {
             int temp = myArray[i][j];
             myArray[i][j] = myArray[j][i];
             myArray[j][i] = temp;
-            printf("%d \t %d\n", myArray[i][j], myArray[j][i]);
         }
     }
 
     // print transpos matrix
-    for(i = 0; i < m; i++){
-        for(j = 0; j < n; j++){
+    for (i = 0; i < m; i++)
+    {
+        for (j = 0; j < n; j++)
+        {
             printf("%d \t", myArray[i][j]);
         }
-        //printf("\n");
+        printf("\n");
     }
-
-
 }
